@@ -4,7 +4,7 @@
       <div class="">
         <a href="/" class=""
           >Work
-          <span class="p-2 py-1 text-center text-white rounded bg-slate-400"
+          <span class="p-2 py-1 text-center text-white rounded bg-[#025A4E]"
             >/</span
           ></a
         >

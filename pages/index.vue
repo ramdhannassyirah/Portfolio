@@ -8,7 +8,7 @@
       <CardW
         :name="nama"
         :image="image"
-        class="bg-[#A3DCD4] mx-5 px-10 mt-10"
+        class="bg-[#A3DCD4] mx-5 px-5 sm:px-10 mt-10"
       />
     </div>
     <div class="flex flex-wrap items-center justify-center">

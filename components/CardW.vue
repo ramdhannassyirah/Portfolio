@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-96 h-96 rounded-3xl sm:h-[400px] sm:w-[600px] overflow-hidden card"
+    class="w-96 h-96 rounded-3xl sm:h-[400px] sm:w-[600px] sm:overflow-hidden card"
   >
     <div class="p-10 text-center sm:text-right">
       <h4 class="font-medium font-roboto">Project</h4>

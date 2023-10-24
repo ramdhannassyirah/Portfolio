@@ -1,7 +1,7 @@
 <template>
-  <div class="container my-10 grid justify-items-center">
+  <div class="container my-10 grid justify-items-center grid-row-3 gap-4">
     <div
-      class="sm:justify-self-end w-[350px] h-[75px] bg-[#025A4E] rounded-full flex items-center justify-between px-4 text-[#EDE7DE] sm:w-[600px]"
+      class="row-end-3 row-span-2 w-[350px] h-[75px] bg-[#025A4E] rounded-full flex items-center justify-between px-4 text-[#EDE7DE] sm:w-[600px]"
     >
       <p class="font-semibold">Frontend</p>
       <p class="font-semibold font-playpen">12~</p>
@@ -12,8 +12,9 @@
       <p class="font-semibold">Frontend</p>
       <p class="font-semibold font-playpen">12~</p>
     </div>
+
     <div
-      class="sm:justify-self-start w-[350px] sm:w-[400px] h-[75px] bg-[#025A4E] rounded-full flex items-center justify-between px-4 text-[#EDE7DE]"
+      class="w-[350px] sm:w-[400px] h-[75px] bg-[#025A4E] rounded-full flex items-center justify-between px-4 text-[#EDE7DE]"
     >
       <p class="font-semibold">Frontend</p>
       <p class="font-semibold font-playpen">12~</p>

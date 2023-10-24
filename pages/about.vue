@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto box-border">
     <div
       class="container mx-auto grid grid-cols-1 mt-10 sm:grid-cols-2 justify-items-center"
     >
@@ -19,16 +19,18 @@
         </h1>
         <div class="mt-4 sm:mt-6">
           <p class="text-xl font-roboto">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            natus dignissimos asperiores illum. Harum, nihil! Eaque perferendis
-            consequatur similique eligendi.
+            "I am a Remote Web Developer with 1 year of experience, based in
+            Cianjur, Indonesia. I specialize in developing various web solutions
+            and applications with an emphasis on quality and efficiency. I have
+            experience collaborating online, creating engaging user experiences,
+            and tackling technical challenges in a remote working environment."
           </p>
         </div>
       </div>
     </div>
     <!-- components skill -->
     <skill />
-    <div class="grid justify-items-center sm:w-[700px] mt-10 px-4 sm:ml-80">
+    <div class="grid justify-items-center sm:w-[700px] mt-10 px-4">
       <h1 class="text-xl sm:text-5xl font-bold font-playpen text-[#025A4E]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
         aperiam ducimus cumque dicta expedita possimus!
@@ -40,13 +42,16 @@
         rem vitae?
       </p>
     </div>
+    <CardSkill class="mt-10" />
   </div>
 </template>
 <script>
 import skill from "~/components/skill.vue";
+import CardSkill from "~/components/CardSkill.vue";
 export default {
   components: {
     skill,
+    CardSkill,
   },
 };
 </script>
