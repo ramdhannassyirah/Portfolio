@@ -30,13 +30,13 @@
     </div>
     <!-- components skill -->
     <skill />
-    <div class="grid justify-items-center">
-      <p class="text-3xl font-bold font-playpen w-[500px] text-[#025A4E]">
+    <div class="grid justify-items-center mx-3 sm:mx-0">
+      <p class="sm:text-3xl font-bold font-playpen sm:w-[500px] text-[#025A4E]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
         aperiam ducimus cumque dicta expedita possimus!
       </p>
 
-      <p class="text-2xl mt-5 w-[500px]">
+      <p class="sm:text-2xl mt-5 sm:w-[500px]">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
         autem laborum deleniti perferendis numquam eveniet natus mollitia non
         rem vitae?
