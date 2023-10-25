@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#ffffff] w-[150px] h-[40px] box-border rounded-full flex justify-center items-center shadow-2xl"
+    class="bg-[#ffffff] w-[150px] h-[40px] box-border rounded-full flex justify-center items-center"
   >
     <h1 class="font-semibold text-[#025A4E]">{{ name }}</h1>
   </div>
