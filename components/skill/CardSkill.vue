@@ -8,7 +8,7 @@
         :key="index"
       />
     </div>
-    <div class="flex flex-wrap marquee2">
+    <div class="hidden sm:flex sm:flex-wrap marquee2 sm:block">
       <Skill
         v-for="(name, index) in shuffledNames"
         :name="name"
