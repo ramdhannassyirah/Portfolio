@@ -1,17 +1,16 @@
 <template>
   <div
-    class="w-96 h-96 rounded-3xl sm:h-[400px] sm:w-[600px] sm:overflow-hidden card"
+    class="container w-96 h-96 rounded-3xl sm:h-[400px] sm:w-46 overflow-hidden card"
   >
     <div class="p-10 text-center sm:text-right">
       <h4 class="font-medium font-roboto">Project</h4>
-      <h1 class="font-semibold font-playpen">{{ name }}</h1>
+      <h1 class="text-xl font-semibold font-playpen">Article</h1>
     </div>
     <div class="zoom-on-hover">
-      <a href=""> <img class="rounded-xl" :src="image" alt="" /></a>
+      <img class="rounded-xl" src="http://source.unsplash.com/random" alt="" />
     </div>
   </div>
 </template>
-
 <style>
 .zoom-on-hover {
   transition: transform 0.3s; /* Animasi zoom selama 0.3 detik */
@@ -26,14 +25,6 @@
 
 .card:hover {
   transform: scale(1.1); /* Scaling saat hover sebesar 110% */
-  box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.4); /* Bayangan saat hover */
+  box-shadow: 0px 0px 55px 2px rgba(0, 0, 0, 0.5); /* Bayangan saat hover */
 }
 </style>
-<script>
-export default {
-  props: {
-    image: null,
-    name: String, // Ini adalah prop image
-  },
-};
-</script>

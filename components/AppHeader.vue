@@ -13,13 +13,13 @@
         <a href="/about">About</a>
       </div>
       <div class="">
-        <a href="">Play</a>
+        <NuxtLink to="/roadmap">Roadmap</NuxtLink>
       </div>
       <div class="">
         <a href="">Notes</a>
       </div>
       <div class="">
-        <a href="">Contact</a>
+        <NuxtLink to="/contact">Contact</NuxtLink>
       </div>
     </div>
   </nav>

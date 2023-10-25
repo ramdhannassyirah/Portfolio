@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto box-border">
+  <div class="container box-border mx-auto">
     <div
-      class="container mx-auto grid grid-cols-1 mt-10 sm:grid-cols-2 justify-items-center"
+      class="container grid grid-cols-1 mx-auto mt-10 sm:grid-cols-2 justify-items-center"
     >
       <div class="text-center sm:hidden">
         <h1 class="text-4xl sm:text-5xl font-bold font-playpen text-[#025A4E]">
@@ -28,8 +28,13 @@
         </div>
       </div>
     </div>
-    <!-- components Card skill -->
-    <CardSkill class="my-10" />
+    <div class="my-[100px] text-center">
+      <h1 class="text-2xl sm:text-5xl font-bold font-playpen text-[#025A4E]">
+        Skills
+      </h1>
+      <!-- components Card skill -->
+      <CardSkill class="my-10" />
+    </div>
     <!-- descrption -->
     <Desc class="" />
   </div>

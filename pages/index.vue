@@ -6,13 +6,18 @@
     <div class="flex flex-wrap items-center justify-center">
       <CardH class="bg-[#D094E5] mx-5 px-10 sm:ml-10 mt-10" />
       <CardW
-        :name="nama"
-        :image="image"
+        :name="nama[0]"
+        :image="images[0]"
+        :href="url"
         class="bg-[#A3DCD4] mx-5 px-5 sm:px-10 mt-10"
       />
     </div>
     <div class="flex flex-wrap items-center justify-center">
-      <CardW class="bg-[#E8B89C] mx-5 px-10 mt-10" />
+      <CardW
+        :name="nama[1]"
+        :image="images[1]"
+        class="bg-[#E8B89C] mx-5 px-10 mt-10"
+      />
       <CardH class="bg-[#BDDFF9] mx-5 px-10 sm:ml-10 mt-10" />
     </div>
     <div class="py-12 mt-10 text-center">
@@ -36,15 +41,17 @@
 </template>
 <script>
 import AppHero from "~/components/AppHero.vue";
-import CardW from "~/components/CardW.vue";
-import CardH from "~/components/CardH.vue";
-import image from "@/assets/img/resepKita.jpg";
+import CardW from "~/components/Card/CardW.vue";
+import CardH from "~/components/Card/CardH.vue";
+import resepKita from "@/assets/img/resepKita.jpg";
+import portfolio from "@/assets/img/protfolio.jpg";
 
 export default {
   data() {
     return {
-      image: image,
-      nama: "Resep Kita",
+      images: [resepKita, portfolio],
+      nama: ["Resep Kita", "Portfolio"],
+      url: ["https://resep-kitav1.netlify.app/"],
     };
   },
   components: {
