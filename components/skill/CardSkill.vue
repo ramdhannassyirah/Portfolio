@@ -1,25 +1,38 @@
 <template>
   <div class="flex flex-col space-y-4 overflow-x-hidden">
-    <div class="marquee grid grid-flow-col auto-cols-max">
-      <skill class="mx-2 sm:mx-4" /> <skill class="mx-2 sm:mx-4" />
-      <skill class="mx-2 sm:mx-4" /><skill class="mx-2 sm:mx-4" />
+    <div class="grid grid-flow-col gap-2 marquee">
+      <Skill
+        :name="nama[index % nama.length]"
+        class="mx-2 sm:mx-4"
+        v-for="index in 4"
+        :key="index"
+      />
     </div>
-    <div class="marquee2 grid grid-flow-col auto-cols-max mt-4">
-      <skill class="mx-2 sm:mx-4" /> <skill class="mx-2 sm:mx-4" />
-      <skill class="mx-2 sm:mx-4" /><skill class="mx-2 sm:mx-4" />
-      <skill class="mx-2 sm:mx-4" />
+    <div class="grid grid-flow-col gap-2 mt-4 marquee2">
+      <Skill
+        :name="nama[(index + 1) % nama.length]"
+        class="sm:mx-4"
+        v-for="index in 4"
+        :key="index"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import skill from "./skill.vue";
+import Skill from "./skill.vue";
 export default {
+  data() {
+    return {
+      nama: ["HTML", "CSS", "Javascript"],
+    };
+  },
   components: {
-    skill,
+    Skill,
   },
 };
 </script>
+
 <style>
 @keyframes marquee {
   0% {
@@ -49,5 +62,3 @@ export default {
   animation: marquee2 20s linear infinite;
 }
 </style>
-
-components: { skill },

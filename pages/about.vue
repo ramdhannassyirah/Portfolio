@@ -36,7 +36,8 @@
 </template>
 <script>
 import Desc from "~/components/Desc.vue";
-import CardSkill from "~/components/CardSkill.vue";
+import CardSkill from "~/components/skill/CardSkill.vue";
+
 export default {
   components: {
     CardSkill,
