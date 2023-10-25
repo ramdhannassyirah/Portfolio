@@ -1,8 +1,8 @@
 <template>
   <div
-    class="bg-[#025A4E] w-[150px] h-[40px] rounded-full flex justify-center items-center"
+    class="bg-[#ffffff] w-[150px] h-[40px] box-border rounded-full flex justify-center items-center shadow-2xl"
   >
-    <h1 class="font-semibold text-[#ffffff]">{{ name }}</h1>
+    <h1 class="font-semibold text-[#025A4E]">{{ name }}</h1>
   </div>
 </template>
 

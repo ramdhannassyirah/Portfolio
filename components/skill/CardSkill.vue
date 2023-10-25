@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-col space-y-4 overflow-x-hidden">
-    <div class="grid grid-flow-col gap-2 marquee">
+    <div class="flex marquee">
       <Skill
         :name="nama[index % nama.length]"
-        class="mx-2 sm:mx-4"
+        class="sm:mx-4"
         v-for="index in 4"
         :key="index"
       />
     </div>
-    <div class="grid grid-flow-col gap-2 mt-4 marquee2">
+    <div class="flex marquee2">
       <Skill
         :name="nama[(index + 1) % nama.length]"
         class="sm:mx-4"
@@ -24,7 +24,7 @@ import Skill from "./skill.vue";
 export default {
   data() {
     return {
-      nama: ["HTML", "CSS", "Javascript"],
+      nama: ["HTML", "CSS", "Javascript", "Vue", "Nuxt Js", "Tailwind CSS"],
     };
   },
   components: {
@@ -45,7 +45,7 @@ export default {
 
 .marquee {
   overflow: hidden;
-  animation: marquee 20s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 @keyframes marquee2 {
@@ -59,6 +59,6 @@ export default {
 
 .marquee2 {
   overflow: hidden;
-  animation: marquee2 20s linear infinite;
+  animation: marquee2 10s linear infinite;
 }
 </style>
