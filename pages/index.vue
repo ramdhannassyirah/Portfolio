@@ -51,7 +51,7 @@ export default {
     return {
       images: [resepKita, portfolio],
       nama: ["Resep Kita", "Portfolio"],
-      url: ["https://resep-kitav1.netlify.app/"],
+      url: "https://resep-kitav1.netlify.app/",
     };
   },
   components: {

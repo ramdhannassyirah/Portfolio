@@ -2,9 +2,21 @@
   <div
     class="w-96 h-96 rounded-3xl sm:h-[400px] sm:w-[600px] sm:overflow-hidden card"
   >
-    <div class="p-10 text-center sm:text-right">
-      <h4 class="font-medium font-roboto">Project</h4>
-      <h1 class="text-xl font-semibold font-playpen">{{ name }}</h1>
+    <div
+      class="flex flex-col-reverse items-center py-10 text-center sm:flex-row sm:justify-between"
+    >
+      <div
+        class="flex items-center justify-center my-2 text-center cursor-pointer rounded-xl"
+      >
+        <Icon name="uil:link" />
+        <a class="mx-1 text-lg font-semibold hover:underline" :href="href"
+          >Link</a
+        >
+      </div>
+      <div class="">
+        <h4 class="font-medium font-roboto">Project</h4>
+        <h1 class="text-xl font-semibold font-playpen">{{ name }}</h1>
+      </div>
     </div>
     <div class="zoom-on-hover">
       <a :href="href"> <img class="rounded-xl" :src="image" alt="" /></a>
