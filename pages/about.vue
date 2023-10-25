@@ -28,30 +28,19 @@
         </div>
       </div>
     </div>
-    <!-- components skill -->
-    <skill />
-    <div class="grid justify-items-center mx-3 sm:mx-0">
-      <p class="sm:text-3xl font-bold font-playpen sm:w-[500px] text-[#025A4E]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-        aperiam ducimus cumque dicta expedita possimus!
-      </p>
-
-      <p class="sm:text-2xl mt-5 sm:w-[500px]">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-        autem laborum deleniti perferendis numquam eveniet natus mollitia non
-        rem vitae?
-      </p>
-    </div>
-    <CardSkill class="mt-10" />
+    <!-- components Card skill -->
+    <CardSkill class="my-10" />
+    <!-- descrption -->
+    <Desc class="" />
   </div>
 </template>
 <script>
-import skill from "~/components/skill.vue";
+import Desc from "~/components/Desc.vue";
 import CardSkill from "~/components/CardSkill.vue";
 export default {
   components: {
-    skill,
     CardSkill,
+    Desc,
   },
 };
 </script>
