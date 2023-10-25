@@ -1,19 +1,19 @@
 <template>
   <div class="flex flex-col justify-center mx-auto space-y-4 overflow-x-hidden">
-    <div class="flex marquee">
+    <div class="flex flex-wrap my-2 marquee">
       <Skill
-        :name="nama[index % nama.length]"
-        class="sm:mx-2"
-        v-for="index in 4"
+        class="m-1 sm:mx-2"
+        v-for="(name, index) in shuffledNames"
+        :name="name"
         :key="index"
       />
     </div>
-    <div class="flex marquee2">
+    <div class="flex flex-wrap marquee2">
       <Skill
-        :name="nama[(index + 1) % nama.length]"
-        class="sm:mx-2"
-        v-for="index in 4"
+        v-for="(name, index) in shuffledNames"
+        :name="name"
         :key="index"
+        class="m-1 sm:mx-2"
       />
     </div>
   </div>
@@ -25,8 +25,21 @@ export default {
   data() {
     return {
       nama: ["HTML", "CSS", "Javascript", "Vue", "Nuxt Js", "Tailwind"],
+      shuffledNames: [],
     };
   },
+  mounted() {
+    // Mulai perulangan untuk mengacak nama setiap beberapa detik
+    this.shuffleNames(); // Pertama kali memanggil fungsi
+    setInterval(this.shuffleNames, 10000); // Setiap 5 detik (sesuaikan dengan kebutuhan Anda)
+  },
+  methods: {
+    shuffleNames() {
+      const shuffled = [...this.nama].sort(() => Math.random() - 0.5);
+      this.shuffledNames = shuffled;
+    },
+  },
+
   components: {
     Skill,
   },
