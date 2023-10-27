@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="min-h-screen">
     <div class="py-10">
       <AppHero />
     </div>
@@ -34,7 +34,11 @@
       </div>
     </div>
     <div class="flex flex-wrap items-center justify-center">
-      <CardW class="bg-[#FFFFFF] mx-5 px-10 mt-10 text-[#1C1C1C]" />
+      <CardW
+        :name="nama[2]"
+        :image="images[2]"
+        class="bg-[#FFFFFF] mx-5 px-10 mt-10 text-[#1C1C1C]"
+      />
       <CardH class="bg-[#1C1C1C] mx-5 px-10 sm:ml-10 mt-10 text-[#ffffff]" />
     </div>
   </div>
@@ -45,12 +49,13 @@ import CardW from "~/components/Card/CardW.vue";
 import CardH from "~/components/Card/CardH.vue";
 import resepKita from "@/assets/img/resepKita.jpg";
 import portfolio from "@/assets/img/protfolio.jpg";
+import farmWeb from "@/assets/img/FarmTech.jpg";
 
 export default {
   data() {
     return {
-      images: [resepKita, portfolio],
-      nama: ["Resep Kita", "Portfolio"],
+      images: [resepKita, portfolio, farmWeb],
+      nama: ["Resep Kita", "Portfolio", "FarmTech"],
       url: "https://resep-kitav1.netlify.app/",
     };
   },
