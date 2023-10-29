@@ -8,7 +8,7 @@
       <CardW
         :name="nama[0]"
         :image="images[0]"
-        :href="url"
+        :href="url[0]"
         class="bg-[#A3DCD4] mx-5 px-5 sm:px-10 mt-10"
       />
     </div>
@@ -18,7 +18,12 @@
         :image="images[1]"
         class="bg-[#E8B89C] mx-5 px-10 mt-10"
       />
-      <CardH class="bg-[#BDDFF9] mx-5 px-10 sm:ml-10 mt-10" />
+      <CardH
+        :name="nama[3]"
+        :image="images[3]"
+        :href="url[1]"
+        class="bg-[#BDDFF9] mx-5 px-10 sm:ml-10 mt-10"
+      />
     </div>
     <div class="py-12 mt-10 text-center">
       <div class="">
@@ -50,13 +55,19 @@ import CardH from "~/components/Card/CardH.vue";
 import resepKita from "@/assets/img/resepKita.jpg";
 import portfolio from "@/assets/img/protfolio.jpg";
 import farmWeb from "@/assets/img/FarmTech.jpg";
+import agency from "@/assets/img/agency.jpg";
+import {css, html, vue, js, tailwind, nuxt} from "@/store/import.js";
 
 export default {
   data() {
     return {
-      images: [resepKita, portfolio, farmWeb],
-      nama: ["Resep Kita", "Portfolio", "FarmTech"],
-      url: "https://resep-kitav1.netlify.app/",
+      images: [resepKita, portfolio, farmWeb, agency],
+      nama: ["Resep Kita", "Portfolio", "FarmTech", "Agency"],
+      url: [
+        "https://resep-kitav1.netlify.app/",
+        "https://agency-website-wheat.vercel.app/",
+      ],
+      logo: [css, html, vue, js, tailwind, nuxt],
     };
   },
   components: {

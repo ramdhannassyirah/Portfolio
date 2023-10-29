@@ -47,6 +47,7 @@ export default {
     image: null,
     name: String,
     href: String,
+    logo: null,
   },
 };
 </script>
