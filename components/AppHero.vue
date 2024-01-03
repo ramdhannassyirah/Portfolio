@@ -5,7 +5,7 @@
         Hi.I'm Ramdhan Nassyirah
       </h1>
       <h1 class="text-4xl sm:text-5xl font-bold font-playpen text-[#025A4E]">
-        A Web Developer
+        A Frontend Web Developer
       </h1>
     </div>
     <div class="mt-8">
