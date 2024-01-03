@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sm:bg-[#f9f7f5] sm:mx-auto sm:w-[80%] sm:mx-10 rounded-[80px] sm:px-10 sm:grid sm:grid-cols-2 justify-items-center"
+    class="sm:bg-[#f9f7f5] mx-auto sm:w-[80%] sm:mx-10 rounded-[80px] sm:px-10 sm:grid sm:grid-cols-2 justify-items-center"
   >
     <div
       class="bg-[#f9f7f5] rounded-xl sm:rounded-none sm:bg-transparent p-5 sm:p-0 m-10"

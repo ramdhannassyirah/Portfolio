@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {enabled: true},
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/google-fonts"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-icon",
+    "@nuxtjs/google-fonts",
+    "@vueuse/motion/nuxt",
+  ],
   googleFonts: {
     families: {
       Roboto: true,
@@ -10,6 +15,26 @@ export default defineNuxtConfig({
       Raleway: {
         wght: [100, 400],
         ital: [100],
+      },
+    },
+  },
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          "pop-bottom": {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+        },
       },
     },
   },

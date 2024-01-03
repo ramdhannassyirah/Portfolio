@@ -33,7 +33,7 @@
         Skills
       </h1>
       <!-- components Card skill -->
-      <CardSkill class="my-10" />
+      <CardSkill />
     </div>
     <!-- descrption -->
     <Desc class="" />
